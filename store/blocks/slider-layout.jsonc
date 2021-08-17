@@ -1,0 +1,34 @@
+{
+    "slider-layout#home": {
+        "children": [
+            "image#brand1",
+            "image#brand2"
+        ],
+        "props": {
+            "autoplay": {
+                "timeout": 5000,
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "fullWidth": false,
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly"
+        }
+    },
+    "image#brand1": {
+        "props": {
+            "src": "https://maratonavirtual.s3.sa-east-1.amazonaws.com/6iibxhv7jzzdn2749uhoxub2fdjf?response-content-disposition=inline%3B%20filename%3D%22BANNER-WOOD.png%22%3B%20filename%2A%3DUTF-8%27%27BANNER-WOOD.png&response-content-type=image%2Fpng&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIRHGNFPZAGTZ7SUA%2F20210817%2Fsa-east-1%2Fs3%2Faws4_request&X-Amz-Date=20210817T204400Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=c9338582b5dfb120b9c3ab232875b458178a1433b32e9e741e5ff0ec3ff2f89e",
+            "description": "something something"
+        }
+    },
+    "image#brand2": {
+        "props": {
+            "src": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+            "description": "something something"
+        }
+    }
+}
