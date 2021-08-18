@@ -1,3 +1,7 @@
 .styledLink {
   color: #fff;
 }
+.menuContainer {
+  justify-content: center;
+  align-items: center;
+}

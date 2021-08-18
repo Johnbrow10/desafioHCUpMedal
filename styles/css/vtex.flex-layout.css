@@ -1,3 +1,7 @@
+.flexRow{
+  align-items: center;
+  justify-content: center;
+}
 .flexRow--flexLayoutCssRow { /* estilo do container do header */
   background: #424245;
   height: 80px;

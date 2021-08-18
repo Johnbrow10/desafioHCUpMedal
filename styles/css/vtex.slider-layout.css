@@ -1,3 +1,6 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
 .sliderTrackContainer {
-  width: 800px;
+  width: 700px;
 }
