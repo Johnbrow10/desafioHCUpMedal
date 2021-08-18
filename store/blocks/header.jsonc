@@ -13,12 +13,13 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#desktop"
+      "flex-layout.row#desktop",
+      "flex-layout.row#menu" /* uma nova linha paradicionar o menu abaixo do search */
     ]
   },
   "flex-layout.row#desktop": {
     "props": {
-      "blockClass": "flexLayoutCssRow",
+      "blockClass": "flexLayoutCssRow", /* css paraestilizar os items do header  */
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -34,7 +35,7 @@
   },
   "flex-layout.col#spacer": {
     "props": {
-      "blockClass": "spaceAtoa"
+      "blockClass": "spaceAtoa" /* css so para diminuir o espaçamento atravez do logo e barra de pesquisa */
     }
   },
   "flex-layout.col#logo-desktop": {
@@ -53,6 +54,47 @@
       "width": "150"
     }
   },
+  "flex-layout.row#menu": { /*  linha para adicionar o menu */
+    "props": {
+      "blockClass": "rowMenu" /* css para estilziar o menu */
+    },
+    "children": [
+      "vtex.menu@2.x:menu#websites" /* add a dependencia de menu no header  */
+    ]
+  },
+  "vtex.menu@2.x:menu#websites": { /* add as props e children da dependencia de menu */
+    "props": {
+      "blockClass": "menu", /* css do menu */
+      "items": [
+        {
+          "id": "menu-item-shop",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": { /*  props do item de menu */
+            "type": "internal",
+            "href": "/para",
+            "noFollow": false,
+            "tagTitle": "Shop",
+            "text": "Shop"
+          }
+        },
+        {
+          "id": "menu-item-about-us",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": false,
+            "tagTitle": "about-us",
+            "text": "About Us"
+          }
+        }
+      ]
+    }
+  },
   "header-layout.mobile": {
     "children": [
       "sticky-layout#mobile"
@@ -68,7 +110,6 @@
       "drawer",
       "logo",
       "flex-layout.col#spacer",
-      "login",
       "minicart.v2"
     ],
     "props": {
@@ -79,6 +120,8 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": [
+      "vtex.menu@2.x:menu#websites"
+    ]
   }
 }
