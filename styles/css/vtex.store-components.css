@@ -1,5 +1,5 @@
 .searchBarContainer {
-  width: 600px;
+  width: 500px;
   border: none;
   margin-left:20px ;
 }
@@ -15,5 +15,5 @@
     color: #fff;
 }
 .logoImage{
-    padding-left: -100px;
+    padding-left: -90px;
 }

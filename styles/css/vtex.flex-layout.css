@@ -1,8 +1,5 @@
-.flexRow{
-  align-items: center;
-  justify-content: center;
-}
-.flexRow--flexLayoutCssRow { /* estilo do container do header */
+.flexRow--flexLayoutCssRow {
+  /* estilo do container do header */
   background: #424245;
   height: 80px;
   padding: 20px;
@@ -11,7 +8,6 @@
   background: #424245;
 }
 
-
 .flexCol--spaceAtoa {
-  width: 40px;
+  width: 80px;
 }

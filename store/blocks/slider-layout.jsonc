@@ -21,13 +21,13 @@
     },
     "image#brand1": {
         "props": {
-            "src": "https://cultura.uol.com.br/upload/tvcultura/esporte/20200831142825_coringones.jpg",
+            "src": "assets/img/1.png",
             "description": "something something"
         }
     },
     "image#brand2": {
         "props": {
-            "src": "https://storecomponents.vteximg.com.br/assets/vtex.file-manager-graphql/images/Group%207%20(1)%20(1)%20(1)%20(1)%20(1)___c6b3ed853fb16a08b265753b50e0c57a.png",
+            "src": "assets/img/2.png",
             "description": "something something"
         }
     }
